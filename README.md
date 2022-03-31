@@ -1,1 +1,22 @@
 "# Bolt-BL100" 
+```
+SoC = MT7620N + MT7612EN
+ROM = 16Mb
+RAM = 64Mb
+LTE Module = Qualcomm MDM 9225
+
+*Telnet user admin pass db40
+
+Product Askey RTL0010VW
+0x000000000000-0x000001000000 : "ALL"
+0x000000000000-0x000000030000 : "Bootloader"
+0x000000030000-0x000000040000 : "Config"
+0x000000040000-0x000000050000 : "Factory"
+0x000000050000-0x000000a00000 : "Kernel"
+0x000000a00000-0x000000ff0000 : "Kernel2"
+0x000000ff0000-0x000001000000 : "SmsInfo"
+
+## hapus lock imsi
+# nvram_get LTE_ImsiLock
+51088,51068,00101
+# nvram_set LTE_ImsiLock
