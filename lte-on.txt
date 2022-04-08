@@ -1,0 +1,14 @@
+untuk mengaktifkan LTE jika sudah menggunakan openwrt.
+tambahkan baris berikut pada /etc/config/system
+
+config gpio_switch 'gpio27'
+        option name 'gpio27'
+        option gpio_pin '27'
+        option direction 'out'
+        option value '1'
+		
+config gpio_switch 'gpio28'
+        option name 'gpio28'
+        option gpio_pin '28'
+        option direction 'out'
+        option value '1'
